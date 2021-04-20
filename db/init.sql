@@ -5,10 +5,9 @@ CREATE TABLE IF NOT EXISTS oscar_age_female (
     `id` int AUTO_INCREMENT,
     `Year` INT,
     `Age` INT,
-    `Name` VARCHAR(22) CHARACTER SET utf8,
+    `Name` VARCHAR(35) CHARACTER SET utf8,
     `Movie` VARCHAR(35) CHARACTER SET utf8,
     PRIMARY KEY (`id`)
-
 );
 INSERT INTO oscar_age_female (Year, Age, Name, Movie) VALUES
     (1928,22,' "Janet Gaynor"',' "Seventh Heaven'),

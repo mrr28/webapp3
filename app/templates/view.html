@@ -2,19 +2,19 @@
 {% block content %}
 
 <div class="card" class="m-5 p-2">
-    <h5 class="card-title">{{ oscars.Year }} - {{ oscars.Name }}</h5>
+    <h5 class="card-title">{{ oscar.Year }} - {{ oscar.Name }}</h5>
 
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">Year: {{ oscars.Year }}</li>
-        <li class="list-group-item">Age: {{ oscars.Age }}</li>
-        <li class="list-group-item">Name: {{ oscars.Name }}</li>
-        <li class="list-group-item">Movie: {{ oscars.Movie }}</li>
+        <li class="list-group-item">Year: {{ oscar.Year }}</li>
+        <li class="list-group-item">Age: {{ oscar.Age }}</li>
+        <li class="list-group-item">Name: {{ oscar.Name }}</li>
+        <li class="list-group-item">Movie: {{ oscar.Movie }}</li>
     </ul>
     <div class="card-body">
-        <a href="/edit/{{oscars.id}}" class="card-link btn btn-primary">edit</a>
+        <a href="/edit/{{oscar.id}}" class="card-link btn btn-primary">edit</a>
     </div>
 </div>
-<form action="/delete/{{oscars.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
+<form action="/delete/{{oscar.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
 
 
 {% endblock %}

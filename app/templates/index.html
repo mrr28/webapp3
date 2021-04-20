@@ -12,10 +12,10 @@
     <tbody>
     {% for oscar in oscars %}
     <tr>
-        <td><a href="view/{{oscars.id}}">{{ oscars.Year }}</a></td>
-        <td>{{ oscars.Age }}</td>
-        <td>{{ oscars.Name }}</td>
-        <td>{{ oscars.Movie }}</td>
+        <td><a href="view/{{oscar.id}}">{{ oscar.Year }}</a></td>
+        <td>{{ oscar.Age }}</td>
+        <td>{{ oscar.Name }}</td>
+        <td>{{ oscar.Movie }}</td>
     </tr>
     {% endfor %}
     </tbody>
